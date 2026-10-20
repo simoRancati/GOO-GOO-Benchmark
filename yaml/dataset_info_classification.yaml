@@ -1,0 +1,108 @@
+datasets:
+
+  - name: "myocardial_infarction"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/myocardial_infarction_complications.csv"
+    target: "class"
+    task: classification
+    n_classes: 2
+    group_class: [1,2,3,4,5,6,7]
+    notes: "UCI Myocardial Infarction Complications"
+
+  - name: "parkinson"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/parkinson.csv"
+    target: "class"
+    task: classification
+    n_classes: 2
+    notes: "UCI Parkinsons dataset"
+
+  - name: "hepatitis"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/hepatitis.csv"
+    target: "class"
+    task: classification
+    n_classes: 2
+    notes: "UCI Hepatitis dataset"
+
+  - name: "cirrhosis"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/cyrrosis.csv"
+    target: "class"
+    task: classification
+    n_classes: 3
+    notes: "UCI Cirrhosis survival dataset"
+
+  - name: "glioma"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/glioma.csv"
+    target: "class"
+    task: classification
+    n_classes: 2
+    notes: "UCI Glioma grading dataset"
+
+  - name: "thyroid_recurrence"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/thyroid_cancer.csv"
+    target: "class"
+    task: classification
+    n_classes: 2
+    notes: "UCI Differentiated Thyroid Cancer Recurrence"
+
+  - name: "student_depression"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/student_depression_dataset.csv"
+    target: "Depression"
+    task: classification
+    n_classes: 2
+    notes: "Kaggle Student Depression dataset"
+
+  - name: "aids_death"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/aids_clinical_trials.csv"
+    target: "cid"
+    task: classification
+    n_classes: 2
+    notes: "UCI AIDS Clinical Trials Group Study 175"
+
+  - name: "autism_detection"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/autistic_spectrum_disorder_screening_data_for_children.csv"
+    target: "class"
+    task: classification
+    n_classes: 2
+    notes: "UCI Autism screening dataset"
+
+  - name: "obesity_prediction"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/estimation_of_obesity_levels_based_on_eating_habits_and_physical_condition.csv"
+    target: "NObeyesdad"
+    task: classification
+    n_classes: 7
+    notes: "UCI Obesity levels dataset"
+
+  - name: "Gh_T0"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/SGA-ISA/data_t0.csv"
+    target: "RESPONDER(=0: poor 1:mild 2: good)"
+    task: classification
+    n_classes: 3
+    notes: "GH therapy response baseline"
+
+  - name: "Gh_T1"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/SGA-ISA/data_t1.csv"
+    target: "RESPONDER(=0: poor 1:mild 2: good)"
+    task: classification
+    n_classes: 3
+    notes: "GH therapy response follow-up"
+
+  - name: "Gh_T2"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/SGA-ISA/data_t2.csv"
+    target: "RESPONDER(=0: poor 1:mild 2: good)"
+    task: classification
+    n_classes: 3
+    notes: "GH therapy response final follow-up"
+
+  - name: "cervical_cancer"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/cervical_cancer_behavior_risk.csv"
+    target: "ca_cervix"
+    task: classification
+    n_classes: 2
+    notes: "UCI Cervical cancer risk factors"
+
+  - name: "radnkbench"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/radiomics_Huang2023_lungcancer_malignancy_presence.tsv"
+    target: "Target"
+    task: classification
+    n_classes: 2
+    notes: "Radiomics benchmark dataset"
+

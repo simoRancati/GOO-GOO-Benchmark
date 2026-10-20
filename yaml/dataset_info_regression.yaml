@@ -1,0 +1,37 @@
+datasets:
+
+  - name: "parkinson_telemonitoring"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/parkinsons_telemonitoring.csv"
+    target: "motor_UPDRS"
+    task: regression
+    notes: "UCI Parkinson Telemonitoring"
+
+  - name: "infrared_thermography"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/infrared_thermography_temperature.csv"
+    target: "aveOralF"
+    task: regression
+    notes: "UCI Infrared Thermography Temperature Dataset"
+
+  - name: "cancer_regression"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/cancer_reg.csv"
+    target: "target_deathrate"
+    task: regression
+    notes: "Kaggle Cancer Regression dataset"
+
+  - name: "health_insurance"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/medical_insurance.csv"
+    target: "premium"
+    task: regression
+    notes: "Kaggle Health Insurance dataset"
+
+  - name: "heart_risk_prediction"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/cardiovascular_risk_dataset.csv"
+    target: "heart_disease_risk_score"
+    task: regression
+    notes: "Kaggle Heart Risk Progression dataset"
+
+  - name: "protein_structure"
+    path: "/blue/salemi/simonerancati/TabProject/datasets/protein.csv"
+    target: "RMSD"
+    task: regression
+    notes: "Kaggle / UCI Protein Tertiary Structure dataset"
