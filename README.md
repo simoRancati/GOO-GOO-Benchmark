@@ -78,7 +78,7 @@ Evaluates regression methods on medical tabular datasets using:
 
 - **Evaluation:** 10-fold `GroupKFold` cross-validation.
 - **Training fractions:** 10%, 20%, 50%, 75%, and 100%.
-- **ML models:** Linear regression, Ridge, Elastic Net, random forests, extra trees, gradient boosting, SVR, k-NN, MLP, and optional external boosting libraries.
+- **Models:** Tabular Models + Linear regression, Ridge, Elastic Net, random forests, extra trees, gradient boosting, SVR, k-NN, MLP, and optional external boosting libraries.
 - **Hyperparameter selection:** Inner `GridSearchCV`, optimized for RMSE.
 - **Metrics:** MAE, RMSE, and R².
 
@@ -108,18 +108,14 @@ Processes existing benchmark-result CSV files to generate the final comparative 
 
 Its workflow includes:
 
-1. Merging the **corrected binary classification results** with the **previously computed multiclass results**.
-2. Auditing differences between original and corrected binary runs.
-3. Summarizing TFM and ML performance across training fractions.
-4. Performing **paired Wilcoxon tests**, **Holm multiple-testing correction**, and model-level comparisons.
-5. Exploring relationships between **dataset characteristics** and predictive performance.
-6. Exporting publication-oriented **CSV tables**, **PNG figures**, and **text/Markdown reports**.
-
-**Important:** This script requires **historical classification results**, the **corrected binary rerun**, **regression results**, and **dataset-characteristics CSV files**. Not all of these are produced by the three other scripts as currently configured, and these input CSV files are **not included in this repository**.
+1. Summarizing TFM and ML performance across training fractions.
+2. Performing **paired Wilcoxon tests**, **Holm multiple-testing correction**, and model-level comparisons.
+3. Exploring relationships between **dataset characteristics** and predictive performance.
+4. Exporting publication-oriented **CSV tables**, **PNG figures**, and **text/Markdown reports**.
 
 ## 📊 Datasets & evaluation design
 
-The YAML configurations list **15 classification datasets** and **6 regression datasets**. After the exclusions applied in the code (`student_depression` and `health_insurance`), the paper's final analysis covers **14 classification tasks** and **5 regression tasks**.
+The YAML configurations list covers **14 classification tasks** and **5 regression tasks**.
 
 The classification tasks include **9 binary** and **5 multiclass** datasets. The three growth-hormone-response datasets (`Gh_T0`, `Gh_T1`, `Gh_T2`) are combined as **one GH cohort** for relevant inferential comparisons in `statistical_analysis.py`.
 
